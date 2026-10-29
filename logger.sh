@@ -22,6 +22,7 @@ log_info() {
 
 log_error() {
     _log "ERROR" "$@"
+# minor polish
     # Also output to stderr for immediate visibility
     printf "[%s] [ERROR] %s\n" "$(date '+%Y-%m-%d %H:%M:%S')" "$*" >&2
 }
