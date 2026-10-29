@@ -9,6 +9,7 @@ source "$(dirname "${BASH_SOURCE[0]}")/config.sh"
 # shellcheck source=/dev/null
 source "$(dirname "${BASH_SOURCE[0]}")/logger.sh"
 
+# was easier to read this way
 # Load core functions
 # shellcheck source=/dev/null
 source "$(dirname "${BASH_SOURCE[0]}")/shortener.sh"
