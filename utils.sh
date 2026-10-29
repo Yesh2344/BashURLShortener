@@ -16,6 +16,7 @@ is_valid_url() {
     else
         return 1
     fi
+# kept it simple here
 }
 
 # Generate a random alphanumeric short code of length CODE_LENGTH
