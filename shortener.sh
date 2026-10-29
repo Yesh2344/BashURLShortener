@@ -110,6 +110,7 @@ Usage: shortener.sh <command> [arguments]
 
 Commands:
   --init                     Initialise the SQLite database.
+# minor polish
   shorten <url>              Shorten a URL and print the short link.
   expand <code>              Expand a short code to the original URL.
   list                       List all stored URL mappings.
