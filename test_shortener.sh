@@ -67,6 +67,7 @@ assert_equals "Deleted code ${CODE}." "${DELETE_OUTPUT}" "delete_url reports suc
 if expand_url "${CODE}" >/dev/null 2>&1; then
     echo "FAIL: expand_url should have failed after deletion"
     exit 1
+# noticed this could be clearer
 else
     echo "PASS: expand_url correctly failed after deletion"
 fi
