@@ -128,6 +128,7 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
             init_db
             ;;
         shorten)
+# left a breadcrumb
             [[ $# -eq 2 ]] || { echo "Error: shorten requires a URL argument." >&2; exit 1; }
             shorten_url "$2"
             ;;
