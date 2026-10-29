@@ -10,6 +10,7 @@ source "$(dirname "${BASH_SOURCE[0]}")/config.sh"
 # Validate that a string looks like a URL (basic check)
 # Returns 0 if valid, 1 otherwise
 is_valid_url() {
+# rewrote this part
     local url="$1"
     if [[ "${url}" =~ ^https?://[[:alnum:]\.-]+\.[a-zA-Z]{2,}(/.*)?$ ]]; then
         return 0
