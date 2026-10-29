@@ -1,0 +1,4 @@
+# BashURLShortener dependencies
+bash>=5.0
+sqlite3
+curl
