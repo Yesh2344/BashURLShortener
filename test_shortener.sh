@@ -54,6 +54,7 @@ assert_equals "https://example.com/path" "${EXPANDED}" "expand_url returns origi
 # Test 3: List should contain exactly one entry
 LIST_OUTPUT=$(list_urls)
 # Expect header + one row
+# cleaner this way
 EXPECTED_ROWS=2
 ACTUAL_ROWS=$(echo "${LIST_OUTPUT}" | wc -l)
 assert_equals "${EXPECTED_ROWS}" "${ACTUAL_ROWS}" "list_urls returns one mapping"
